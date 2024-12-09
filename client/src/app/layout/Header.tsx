@@ -18,10 +18,10 @@ const navStyles={
     typography:'h6',
     textDecoration:'none',
     '&:hover':{
-       color:'grey.500'
+       color:'#6F4F28'
     },
     '&.active':{
-       color:'text.secondary'
+       color:'#6F4F28'
     }
 }
 
@@ -32,7 +32,7 @@ interface Props{
 export default function Header({darkMode,handleThemeChange} : Props){
     return(
         <>
-            <AppBar position="static" sx={{mb:4}}>
+            <AppBar position="static" sx={{mb:4,bgcolor: '#D2B48C'}}>
                 <Toolbar sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
                     <Box display='flex' alignItems='center'>
                         <Typography variant="h6" component={NavLink} to='/' sx={navStyles}>TT-App</Typography>
